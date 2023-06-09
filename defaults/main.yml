@@ -226,6 +226,7 @@ patroni_postgresql_remove_data_directory_on_diverged_timelines: false
 
 # https://patroni.readthedocs.io/en/latest/SETTINGS.html#watchdog
 # https://patroni.readthedocs.io/en/latest/watchdog.html
+patroni_watchdog: false
 patroni_watchdog_mode: automatic # use quotes for 'off' value
 patroni_watchdog_device: /dev/watchdog
 patroni_watchdog_safety_margin: 5
