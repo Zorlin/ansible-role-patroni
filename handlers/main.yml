@@ -8,12 +8,14 @@
     enabled: yes
   notify:
     - restart watchdog
+  when: patroni_watchdog | bool
 
 - name: restart watchdog
   systemd:
     name: watchdog
     state: restarted
     enabled: yes
+  when: patroni_watchdog | bool
 
 - name: restart patroni
   systemd:
